@@ -85,14 +85,14 @@ img {
 }
 
 .header-logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-  font-family: Raleway, cursive;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+  font-family: Raleway, cursive;
 }
 
 .first-part-hlogo {
@@ -154,23 +154,20 @@ img {
 .contact-soc-link {
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: var(--color-text-second);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  justify-content: center;
+  color: var(--color-text-second);
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.contact-soc-link:hover .contact-soc-icon, .contact-soc-link:focus .contact-soc-icon {
+  fill: var(--color-text-action);
+}
 .contact-soc-link .contact-soc-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-soc-link:hover .contact-soc-icon,
-.contact-soc-link:focus .contact-soc-icon {
-  fill: var(--color-text-action);
 }
 
 .contact-soc-text {
@@ -192,17 +189,17 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./img/studio/hero-banner.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/studio/hero-banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .hero-title {
-  color: var(--background-color-first);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  color: var(--background-color-first);
   text-transform: uppercase;
   margin-bottom: 30px;
   width: 696px;
@@ -211,14 +208,14 @@ img {
 }
 
 .button-index {
-  color: var(--background-color-first);
-  background-color: var(--color-text-action);
-  font-family: inherit;
-  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  color: var(--background-color-first);
+  background-color: var(--color-text-action);
+  font-family: inherit;
+  cursor: pointer;
   border-radius: 4px;
   padding: 10px 32px;
   display: inline-block;
@@ -226,9 +223,7 @@ img {
   border-color: transparent;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button-index:hover,
-.button-index:focus {
+.button-index:hover, .button-index:focus {
   color: var(--color-text-first);
   background-color: var(--background-color-third);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -246,10 +241,10 @@ img {
 }
 
 .advant-soc-link {
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
+  width: 100%;
+  height: 100%;
   justify-content: center;
 }
 
@@ -265,24 +260,24 @@ img {
 .advant-title {
   font-size: 14px;
   line-height: 1.14;
-  text-transform: uppercase;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   margin-bottom: 10px;
   margin-top: 30px;
 }
 
 .advant-text {
-  max-width: 270px;
-  color: var(--color-text-second);
   line-height: 1.71;
   letter-spacing: 0.03em;
+  max-width: 270px;
+  color: var(--color-text-second);
 }
 
 .section-title {
   font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+  line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -296,14 +291,14 @@ img {
 }
 
 .wawd-bottom-text {
-  color: var(--background-color-first);
-  background-color: rgba(47, 48, 58, 0.8);
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
+  color: var(--background-color-first);
+  background-color: rgba(47, 48, 58, 0.8);
+  font-family: "Roboto";
+  text-align: center;
   text-transform: uppercase;
   position: absolute;
   bottom: 0;
@@ -326,23 +321,23 @@ img {
 }
 
 .team-title {
-  display: flex;
-  justify-content: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  display: flex;
+  justify-content: center;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
 .team-text {
-  display: flex;
-  justify-content: center;
-  color: var(--color-text-second);
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  display: flex;
+  justify-content: center;
+  color: var(--color-text-second);
   min-width: 130px;
   margin-bottom: 16px;
 }
@@ -356,10 +351,10 @@ img {
 }
 
 .team-soc-item {
-  width: 44px;
-  height: 44px;
   display: flex;
   align-items: center;
+  width: 44px;
+  height: 44px;
   justify-content: center;
 }
 
@@ -369,9 +364,7 @@ img {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.team-soc-link:hover,
-.team-soc-link:focus {
+.team-soc-link:hover, .team-soc-link:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -381,14 +374,12 @@ img {
 .team-soc-icon {
   fill: var(--svg-color-noactive);
 }
+.team-soc-link:hover .team-soc-icon, .team-soc-link:focus .team-soc-icon {
+  fill: var(--background-color-first);
+}
 
 .team-soc-link .team-soc-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-soc-link:hover .team-soc-icon,
-.team-soc-link:focus .team-soc-icon {
-  fill: var(--background-color-first);
 }
 
 .clients-list {
@@ -411,23 +402,18 @@ img {
   justify-content: center;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients-icon {
-  fill: var(--svg-color-noactive);
-}
-
-.clients-link:hover,
-.clients-link:focus {
+.clients-link:hover, .clients-link:focus {
   border: 1px solid var(--color-text-action);
   border-radius: 4px;
 }
-
 .clients-link .clients-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
+.clients-icon {
+  fill: var(--svg-color-noactive);
+}
+.clients-link:hover .clients-icon, .clients-link:focus .clients-icon {
   fill: var(--color-text-action);
 }
 
@@ -438,11 +424,11 @@ img {
 }
 
 .footer-logo {
-  font-family: Raleway, cursive;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  font-family: Raleway, cursive;
   margin-bottom: 20px;
 }
 
@@ -459,17 +445,17 @@ address {
 }
 
 .physical-address {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--background-color-first);
   font-style: normal;
-  line-height: 1.71;
   text-decoration: none;
-  letter-spacing: 0.03em;
 }
 
 .footer-address {
-  color: var(--color-text-third);
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--color-text-third);
 }
 
 .container-footer {
@@ -486,12 +472,12 @@ address {
 }
 
 .footer-soc-title {
-  text-transform: uppercase;
-  color: var(--background-color-first);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background-color-first);
   margin-bottom: 20px;
 }
 
@@ -506,18 +492,16 @@ address {
 }
 
 .footer-soc-link {
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
+.footer-soc-link:hover, .footer-soc-link:focus {
   background-color: var(--color-text-action);
 }
 
@@ -544,17 +528,17 @@ address {
 
 .footer-input-box {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .label-footer {
-  color: var(--background-color-first);
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  color: var(--background-color-first);
+  font-family: "Roboto";
   text-transform: uppercase;
   padding-bottom: 20px;
 }
@@ -568,35 +552,41 @@ address {
   padding-left: 16px;
   outline: transparent;
 }
-
 .input-footer:focus {
   border-color: var(--color-text-action);
 }
 
+.input-footer {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .btn-email-footer {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
   border-radius: 4px;
   border-color: transparent;
   background-color: var(--color-text-action);
   justify-content: center;
-  align-items: center;
   margin-left: 12px;
   color: var(--background-color-first);
   font-family: "Roboto";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  display: flex;
   padding: 10px 28px;
+  cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.btn-email-footer:hover,
-.btn-email-footer:focus {
-  color: var(--color-text-first);
-  background-color: var(--background-color-third);
+.btn-email-footer:hover, .btn-email-footer:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -606,9 +596,7 @@ address {
   margin-left: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.btn-email-footer:hover .send-icon,
-.btn-email-footer:focus .send-icon {
+.btn-emai:hover .send-icon, .btn-email-footer:focus .send-icon {
   fill: var(--color-just-black);
 }
 
@@ -622,7 +610,7 @@ address {
 }
 
 .modal-window {
-  width: 528px;
+  width: auto;
   max-height: 581px;
   background-color: var(--background-color-first);
   border-radius: 4px;
@@ -639,12 +627,12 @@ address {
 }
 
 .modal-title {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  font-family: "Roboto";
+  text-align: center;
   margin-bottom: 12px;
 }
 
@@ -657,20 +645,25 @@ address {
 }
 
 .modal-input {
-  min-width: 448px;
+  width: 100%;
+  box-sizing: border-box;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
   padding-left: 30px;
 }
-
 .modal-input:focus {
   border-color: var(--color-text-action);
 }
-
 .modal-input:focus + .modal-icon {
   fill: var(--color-text-action);
+}
+.modal-input:focus:valid {
+  background-color: rgba(50, 180, 50, 0.255);
+}
+.modal-input:focus:invalid {
+  background-color: rgba(130, 62, 62, 0.255);
 }
 
 .modal-icon {
@@ -680,31 +673,23 @@ address {
   transform: translateY(-50%);
 }
 
-.modal-input:focus:valid {
-  background-color: rgba(50, 180, 50, 0.255);
-}
-
-.modal-input:focus:invalid {
-  background-color: rgba(130, 62, 62, 0.255);
-}
-
 .modal-label {
-  font-family: "Roboto";
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  font-family: "Roboto";
   color: var(--color-text-second);
 }
 
 .modal-label-text {
-  display: block;
-  margin-bottom: 4px;
-  font-family: "Roboto";
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  display: block;
+  margin-bottom: 4px;
+  font-family: "Roboto";
   color: var(--color-text-second);
 }
 
@@ -719,12 +704,14 @@ address {
 
 .check-text {
   display: flex;
-  font-family: "Roboto";
-  font-style: normal;
+  align-items: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  font-family: "Roboto";
+  font-style: normal;
+  justify-content: center;
 }
 
 .check-text .terms-agreement {
@@ -735,9 +722,13 @@ address {
 .check-input:checked + .check-text::before {
   background-color: var(--color-text-action);
   border: none;
-  background-image: url(./img/check-icon.svg);
+  background-image: url(/img/check-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--color-text-first);
+  border-radius: 3px;
 }
 
 .check-input:focus + .check-text::before {
@@ -754,13 +745,21 @@ address {
   margin-right: 8px;
 }
 
+.terms-agreement {
+  margin-left: 5px;
+}
+
 .btn-flex {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .modal-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -769,39 +768,41 @@ address {
   display: inline-block;
   margin-top: 30px;
   font-family: "Roboto";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
   color: var(--background-color-first);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover,
 .modal-button:focus {
-  color: var(--color-text-first);
-  background-color: var(--background-color-third);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .modal-close-button {
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 10px;
   right: 10px;
-  display: flex;
-  align-items: center;
   justify-content: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
+  cursor: pointer;
 }
 
 .modal-close-icon {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.modal-close-button:hover .modal-close-icon,
+.modal-close-button:focus .modal-close-icon {
+  fill: var(--color-text-action);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {

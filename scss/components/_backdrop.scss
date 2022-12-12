@@ -8,7 +8,7 @@
 }
 
 .modal-window {
-    width: 528px;
+    width: auto;
     max-height: 581px;
     background-color: var(--background-color-first);
     border-radius: 4px;
@@ -25,12 +25,9 @@
 }
 
 .modal-title {
+    @include font (700, 20px, 1.15, 0.03em);
     font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
     text-align: center;
-    letter-spacing: 0.03em;
     margin-bottom: 12px;
 }
 
@@ -43,20 +40,25 @@
 }
 
 .modal-input {
-    min-width: 448px;
+    width: 100%;
+    box-sizing: border-box;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: transparent;
     padding-left: 30px;
-}
-
-.modal-input:focus {
-    border-color: var(--color-text-action);
-}
-
-.modal-input:focus+.modal-icon {
-    fill: var(--color-text-action);
+    &:focus {
+        border-color: var(--color-text-action);
+        }
+    &:focus+.modal-icon {
+        fill: var(--color-text-action);
+        }
+    &:focus:valid {
+        background-color: rgba(50, 180, 50, 0.255);
+        }
+    &:focus:invalid {
+        background-color: rgba(130, 62, 62, 0.255);
+        }
 }
 
 .modal-icon {
@@ -66,31 +68,17 @@
     transform: translateY(-50%);
 }
 
-.modal-input:focus:valid {
-    background-color: rgba(50, 180, 50, 0.255);
-}
-
-.modal-input:focus:invalid {
-    background-color: rgba(130, 62, 62, 0.255);
-}
-
 .modal-label {
+    @include font (400, 12px, 1.16, 0.01em);
     font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
     color: var(--color-text-second);
 }
 
 .modal-label-text {
+    @include font (400, 12px, 1.16, 0.01em);
     display: block;
     margin-bottom: 4px;
     font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
     color: var(--color-text-second);
 }
 
@@ -104,13 +92,11 @@
 }
 
 .check-text {
-    display: flex;
+    @include flex;
+    @include font (400, 14px, 1.71, 0.03em);
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    justify-content: center;
 }
 
 .check-text .terms-agreement {
@@ -121,9 +107,13 @@
 .check-input:checked+.check-text::before {
     background-color: var(--color-text-action);
     border: none;
-    background-image: url(./img/check-icon.svg);
+    background-image: url(/img/check-icon.svg);
     background-repeat: no-repeat;
     background-position: center;
+        width: 16px;
+            height: 15px;
+            border: 2px solid var(--color-text-first);
+            border-radius: 3px;
 }
 
 .check-input:focus+.check-text::before {
@@ -140,13 +130,16 @@
     margin-right: 8px;
 }
 
+.terms-agreement {
+    margin-left: 5px;
+}
 .btn-flex {
-    display: flex;
+    @include flex;
     justify-content: center;
-    align-items: center;
 }
 
 .modal-button {
+    @include font (700, 16px, 1.87, 0.06em);
     width: 200px;
     height: 50px;
     border-radius: 4px;
@@ -155,10 +148,6 @@
     display: inline-block;
     margin-top: 30px;
     font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
     color: var(--background-color-first);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -167,31 +156,34 @@
 
 .modal-button:hover,
 .modal-button:focus {
-    color: var(--color-text-first);
-    background-color: var(--background-color-third);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
 .modal-close-button {
+    @include flex;
     position: absolute;
     top: 10px;
     right: 10px;
-    display: flex;
-    align-items: center;
     justify-content: center;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: transparent;
+    cursor: pointer;
 }
 
 .modal-close-icon {
-    display: flex;
-    align-items: center;
+    @include flex;
     justify-content: center;
 }
 
+.modal-close-button:hover .modal-close-icon,
+.modal-close-button:focus .modal-close-icon {
+    fill: var(--color-text-action);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+}
 .is-hidden {
     visibility: hidden;
     opacity: 0;

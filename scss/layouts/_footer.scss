@@ -5,11 +5,8 @@
 }
 
 .footer-logo {
+    @include font (700, 26px, 1.19, 0.03em);
     font-family: Raleway, cursive;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
     margin-bottom: 20px;
 }
 
@@ -26,17 +23,15 @@ address {
 }
 
 .physical-address {
+    @include font (null, null, 1.71, 0.03em);
     color: var(--background-color-first);
     font-style: normal;
-    line-height: 1.71;
     text-decoration: none;
-    letter-spacing: 0.03em;
 }
 
 .footer-address {
+    @include font (null, null, 1.71, 0.03em);
     color: var(--color-text-third);
-    line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
 .container-footer {
@@ -53,12 +48,9 @@ address {
 }
 
 .footer-soc-title {
+    @include font (700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: var(--background-color-first);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
     margin-bottom: 20px;
 }
 
@@ -73,19 +65,17 @@ address {
 }
 
 .footer-soc-link {
+    @include flex;
     width: 100%;
     height: 100%;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    display: flex;
-    align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
+    &:hover,
+    &:focus {
     background-color: var(--color-text-action);
+    }
 }
 
 .footer-soc-icon {
@@ -110,18 +100,14 @@ address {
 }
 
 .footer-input-box {
-    display: flex;
+    @include flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .label-footer {
+    @include font (700, 14px, 1.14, 0.03em);
     color: var(--background-color-first);
     font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     padding-bottom: 20px;
 }
@@ -134,39 +120,37 @@ address {
     border-radius: 4px;
     padding-left: 16px;
     outline: transparent;
-}
-
-.input-footer:focus {
+    &:focus {
     border-color: var(--color-text-action);
+    }
 }
-
+.input-footer {
+    @include flex;
+    @include font (400, 16px, 1.25, 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+}
 .btn-email-footer {
+    @include flex;
+    @include font (700, 16px, 1.87, 0.06em);
     width: 200px;
     height: 50px;
     border-radius: 4px;
     border-color: transparent;
     background-color: var(--color-text-action);
     justify-content: center;
-    align-items: center;
     margin-left: 12px;
     color: var(--background-color-first);
     font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    display: flex;
     padding: 10px 28px;
+    cursor: pointer;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-email-footer:hover,
-.btn-email-footer:focus {
-    color: var(--color-text-first);
-    background-color: var(--background-color-third);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        
+            }
 }
 
 .send-icon {
@@ -176,9 +160,9 @@ address {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        .btn-emai:hover &,
+        .btn-email-footer:focus &{
+            fill: var(--color-just-black);
+        }
 }
 
-.btn-email-footer:hover .send-icon,
-.btn-email-footer:focus .send-icon {
-    fill: var(--color-just-black);
-}

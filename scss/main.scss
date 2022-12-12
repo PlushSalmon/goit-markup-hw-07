@@ -1,5 +1,6 @@
 @import './base/box';
 @import './base/common';
+@import './untils/mixins.scss'; 
 @import './base/inheritance';
 @import './base/reset';
 
@@ -11,4 +12,4 @@
 @import './layouts/team';
 @import './layouts/clients';
 @import './layouts/footer';
-@import './layouts/components/backdrop';
+@import './components/backdrop';
