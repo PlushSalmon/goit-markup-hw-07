@@ -1,0 +1,110 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+    display: flex;
+}
+
+.header-logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.first-part-hlogo {
+    color: var(--color-text-action);
+}
+
+.second-part-hlogo {
+    color: var(--color-just-black);
+}
+
+.header-navigation {
+    display: flex;
+    margin-right: auto;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-link.current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--color-text-action);
+}
+
+.nav-link.current {
+    color: var(--color-text-action);
+}
+
+.contact-soc-list {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-link {
+    position: relative;
+    display: flex;
+    color: var(--color-text-first);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-soc-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-second);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-soc-link .contact-soc-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-soc-link:hover .contact-soc-icon,
+.contact-soc-link:focus .contact-soc-icon {
+    fill: var(--color-text-action);
+}
+
+.contact-soc-text {
+    margin-left: 10px;
+}
+
+.contact-soc-icon-one {
+    width: 16px;
+    height: 12px;
+}
+
+.contact-soc-icon-two {
+    width: 10px;
+    height: 16px;
+}
