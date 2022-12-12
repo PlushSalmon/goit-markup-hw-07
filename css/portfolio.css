@@ -80,11 +80,11 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.header__container {
   display: flex;
 }
 
-.header-logo {
+.header__logo {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -103,17 +103,17 @@ img {
   color: var(--color-just-black);
 }
 
-.header-navigation {
+.navigation {
   display: flex;
   margin-right: auto;
 }
 
-.nav-list {
+.menu__list {
   display: flex;
   gap: 50px;
 }
 
-.nav-link.current::after {
+.menu__link.current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -124,16 +124,16 @@ img {
   background-color: var(--color-text-action);
 }
 
-.nav-link.current {
+.menu__link.current {
   color: var(--color-text-action);
 }
 
-.contact-soc-list {
+.contact__list {
   display: flex;
   gap: 50px;
 }
 
-.nav-link {
+.menu__link {
   position: relative;
   display: flex;
   color: var(--color-text-first);
@@ -145,13 +145,13 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-soc-item {
+.contact__item {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.contact-soc-link {
+.contact__link {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -163,23 +163,23 @@ img {
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-soc-link:hover .contact-soc-icon, .contact-soc-link:focus .contact-soc-icon {
+.contact__link:hover .contact__icon, .contact__link:focus .contact__icon {
   fill: var(--color-text-action);
 }
-.contact-soc-link .contact-soc-icon {
+.contact__link .contact__icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-soc-text {
+.contact__text {
   margin-left: 10px;
 }
 
-.contact-soc-icon-one {
+.contact__icon__one {
   width: 16px;
   height: 12px;
 }
 
-.contact-soc-icon-two {
+.contact__icon__two {
   width: 10px;
   height: 16px;
 }

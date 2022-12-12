@@ -1,15 +1,15 @@
-.advant-soc-list {
+.casket__list {
     display: flex;
     gap: 30px;
 }
 
-.advant-soc-item {
+.casket__item {
     width: calc((100% - 120px) / 4);
     height: 120px;
     background-color: var(--background-color-third);
 }
 
-.advant-soc-link {
+.casket__link {
     @include flex;
     width: 100%;
     height: 100%;
@@ -20,19 +20,19 @@
     padding-bottom: 0;
 }
 
-.advant-list {
+.text__list {
     display: flex;
     gap: 30px;
 }
 
-.advant-title {
+.casket__title {
     @include font (null, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     margin-bottom: 10px;
     margin-top: 30px;
 }
 
-.advant-text {
+.casket__text {
     @include font (null, null, 1.71, 0.03em);
     max-width: 270px;
     color: var(--color-text-second);

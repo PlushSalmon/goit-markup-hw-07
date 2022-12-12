@@ -1,4 +1,4 @@
-.hero-section {
+.hero {
     background-color: var(--background-color-second);
     padding-top: 200px;
     padding-bottom: 200px;
@@ -9,7 +9,7 @@
     background-position: center;
 }
 
-.hero-title {
+.hero__title {
     @include font (900, 44px, 1.36, 0.06em);
     color: var(--background-color-first);
     text-transform: uppercase;
@@ -19,7 +19,7 @@
     margin-left: auto;
 }
 
-.button-index {
+.hero__button {
     @include font (700, 16px, 1.87, 0.06em);
     color: var(--background-color-first);
     background-color: var(--color-text-action);
